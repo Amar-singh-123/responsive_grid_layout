@@ -1,3 +1,9 @@
-## 0.0.1
+## 1.0.0
 
-* TODO: Describe initial release.
+* Initial release
+* Responsive grid layout with automatic width calculation
+* Support for both builder and children patterns
+* Configurable spacing and padding
+* Fixed and responsive modes
+* Animation support
+* Loading and empty states

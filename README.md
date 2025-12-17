@@ -1,39 +1,103 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# responsive_grid_layout
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+[![pub package](https://img.shields.io/pub/v/responsive_grid_layout.svg)](https://pub.dev/packages/responsive_grid_layout)
+[![popularity](https://img.shields.io/pub/popularity/responsive_grid_layout.svg)](https://pub.dev/packages/responsive_grid_layout/score)
+[![likes](https://img.shields.io/pub/likes/responsive_grid_layout.svg)](https://pub.dev/packages/responsive_grid_layout/score)
+[![pub points](https://img.shields.io/pub/points/responsive_grid_layout.svg)](https://pub.dev/packages/responsive_grid_layout/score)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+A powerful, customizable responsive grid widget for Flutter with automatic width calculation and flexible layout options.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## ✨ Features
 
-## Features
+- 🎯 **Automatic width calculation** - Perfect item sizing based on available space
+- 📱 **Responsive by default** - Adapts to different screen sizes automatically
+- 🎨 **Flexible layouts** - Fixed or responsive modes
+- ⚡ **High performance** - Efficient rendering with builder pattern
+- 🎭 **Animation support** - Smooth transitions when items appear
+- 🔄 **Loading states** - Built-in skeleton loading
+- 📦 **Easy to use** - Intuitive API with sensible defaults
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+## 📸 Screenshots
 
-## Getting started
+[Add screenshots of your examples here]
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+## 🚀 Getting Started
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+Add this to your `pubspec.yaml`:
+```yaml
+dependencies:
+  responsive_grid_layout: ^1.0.0
 ```
 
-## Additional information
+Then run:
+```bash
+flutter pub get
+```
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+## 💡 Usage
+
+### Basic Example
+```dart
+import 'package:responsive_grid_layout/responsive_grid_layout.dart';
+
+ResponsiveGrid(
+  itemCount: items.length,
+  itemsPerRow: 3,
+  horizontalSpacing: 16,
+  verticalSpacing: 16,
+  itemBuilder: (context, index, width) {
+    return MyCard(data: items[index]);
+  },
+)
+```
+
+### Responsive Mode
+```dart
+ResponsiveGrid(
+  itemCount: products.length,
+  minItemWidth: 250,  // Minimum width per item
+  maxItemsPerRow: 4,  // Max items on large screens
+  itemBuilder: (context, index, width) {
+    return ProductCard(product: products[index]);
+  },
+)
+```
+
+### Using Children
+```dart
+ResponsiveGrid(
+  itemsPerRow: 3,
+  children: [
+    Card(child: Text('Item 1')),
+    Card(child: Text('Item 2')),
+    Card(child: Text('Item 3')),
+  ],
+)
+```
+
+## 📖 Full Documentation
+
+For complete documentation, examples, and API reference, visit:
+- [pub.dev documentation](https://pub.dev/packages/responsive_grid_layout)
+- [Example app](https://github.com/yourusername/responsive_grid_layout/tree/main/example)
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our [contributing guidelines](CONTRIBUTING.md) first.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 💖 Support
+
+If you find this package useful, please consider:
+- ⭐ Starring the repo
+- 👍 Liking on pub.dev
+- 🐛 Reporting issues
+- 💡 Suggesting new features
+
+## 📧 Contact
+
+- GitHub: [@yourusername](https://github.com/yourusername)
+- Email: your.email@example.com

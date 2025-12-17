@@ -1,0 +1,17 @@
+name: responsive_grid_layout_example
+description: Example app for responsive_grid_layout package
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  responsive_grid_layout:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
