@@ -19,7 +19,7 @@ A powerful, customizable responsive grid widget for Flutter with automatic width
 
 ## 📸 Screenshots
 
-[Add screenshots of your examples here]
+![Responsive Grid Layout Screenshot](https://raw.githubusercontent.com/Amar-singh-123/responsive_grid_layout/master/screenshots/screenshot1.png)
 
 ## 🚀 Getting Started
 
@@ -79,7 +79,7 @@ ResponsiveGrid(
 
 For complete documentation, examples, and API reference, visit:
 - [pub.dev documentation](https://pub.dev/packages/responsive_grid_layout)
-- [Example app](https://github.com/yourusername/responsive_grid_layout/tree/main/example)
+- [Example app](https://github.com/Amar-singh-123/responsive_grid_layout/tree/master/example)
 
 ## 🤝 Contributing
 
@@ -99,5 +99,5 @@ If you find this package useful, please consider:
 
 ## 📧 Contact
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
+- GitHub: [@Amar-singh-123](https://github.com/Amar-singh-123)
+- Email: amarnathsingh9495@gmail.com

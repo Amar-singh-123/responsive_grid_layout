@@ -1,4 +1,4 @@
-## 1.0.0
+## 1.0.1
 
 * Initial release
 * Responsive grid layout with automatic width calculation

@@ -1,6 +1,6 @@
 name: responsive_grid_layout
 description: "A powerful responsive grid widget for Flutter with automatic width calculation, animation support, and flexible layout options."
-version: 1.0.0
+version: 1.0.2
 homepage: https://github.com/Amar-singh-123/responsive_grid_layout
 repository: https://github.com/Amar-singh-123/responsive_grid_layout
 issue_tracker: https://github.com/Amar-singh-123/responsive_grid_layout/issues

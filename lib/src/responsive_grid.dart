@@ -111,6 +111,21 @@ class ResponsiveGrid extends StatelessWidget {
   /// Widget to show when there are no items
   final Widget? emptyState;
 
+  /// Icon to show in the default empty state
+  final IconData emptyIcon;
+
+  /// Text to show in the default empty state
+  final String emptyText;
+
+  /// Size of the icon in the default empty state
+  final double emptyIconSize;
+
+  /// Color of the icon in the default empty state
+  final Color? emptyIconColor;
+
+  /// Style for the text in the default empty state
+  final TextStyle? emptyTextStyle;
+
   /// Scroll controller for the grid
   final ScrollController? scrollController;
 
@@ -146,6 +161,11 @@ class ResponsiveGrid extends StatelessWidget {
     this.isLoading = false,
     this.skeletonCount = 6,
     this.emptyState,
+    this.emptyIcon = Icons.grid_off,
+    this.emptyText = 'No items to display',
+    this.emptyIconSize = 64.0,
+    this.emptyIconColor,
+    this.emptyTextStyle,
     this.scrollController,
     this.physics,
     this.shrinkWrap = false,
@@ -318,14 +338,19 @@ class ResponsiveGrid extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Icon(Icons.grid_off, size: 64, color: Colors.grey[400]),
+                  Icon(
+                    emptyIcon,
+                    size: emptyIconSize,
+                    color: emptyIconColor ?? Colors.grey[400],
+                  ),
                   const SizedBox(height: 16),
                   Text(
-                    'No items to display',
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.grey[600],
-                    ),
+                    emptyText,
+                    style: emptyTextStyle ??
+                        TextStyle(
+                          fontSize: 16,
+                          color: Colors.grey[600],
+                        ),
                   ),
                 ],
               ),
